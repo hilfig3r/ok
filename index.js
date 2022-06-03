@@ -84,3 +84,8 @@ document.addEventListener('keypress', function (e) {
     }
 });
 */
+new kursor({
+    type: 3,
+    removeDefaultCursor: true
+    //   color: "#476582",
+});
