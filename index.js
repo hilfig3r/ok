@@ -1,19 +1,17 @@
-{
-  "indent_size": "4",
-  "indent_char": " ",
-  "max_preserve_newlines": "5",
-  "preserve_newlines": true,
-  "keep_array_indentation": false,
-  "break_chained_methods": false,
-  "indent_scripts": "normal",
-  "brace_style": "collapse",
-  "space_before_conditional": true,
-  "unescape_strings": false,
-  "jslint_happy": false,
-  "end_with_newline": false,
-  "wrap_line_length": "0",
-  "indent_inner_html": false,
-  "comma_first": false,
-  "e4x": false,
-  "indent_empty_lines": false
-}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+<script>
+VANTA.NET({
+  el: "#animation-bg",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0xea0d41,
+  backgroundColor: 0x0,
+  points: 9.00
+})
+</script>
