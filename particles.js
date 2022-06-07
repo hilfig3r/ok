@@ -1,34 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@CycloneHacks 
-VincentGarreau
-/
-particles.js
-Public
-Code
-Issues
-288
-Pull requests
-51
-Actions
-Projects
-Wiki
-Security
-Insights
-particles.js/particles.js /
-@VincentGarreau
-VincentGarreau init particles.js 2.0.0
-Latest commit 677c14c on May 9, 2015
- History
- 7 contributors
-@VincentGarreau@calvintennant@pborreli@LevChurakov@icodeforlove@aweary@Arturszott
-1541 lines (1192 sloc)  42 KB
-  
 /* -----------------------------------------------
 /* Author : Vincent Garreau  - vincentgarreau.com
 /* MIT license: http://opensource.org/licenses/MIT
@@ -1570,15 +1539,3 @@ window.particlesJS.load = function(tag_id, path_config_json, callback){
   xhr.send();
 
 };
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
