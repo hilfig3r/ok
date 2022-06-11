@@ -27,7 +27,7 @@ var pJS = function(tag_id, params){
           }
         },
         color: {
-          value: '#fff'
+          value: '#ff0000'
         },
         shape: {
           type: 'circle',
@@ -41,7 +41,7 @@ var pJS = function(tag_id, params){
           image: {
             src: '',
             width: 100,
-            height: 100
+            height: 100  
           }
         },
         opacity: {
@@ -88,7 +88,7 @@ var pJS = function(tag_id, params){
         array: []
       },
       interactivity: {
-        detect_on: 'canvas',
+        detect_on: 'window',
         events: {
           onhover: {
             enable: true,
