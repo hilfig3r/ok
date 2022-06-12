@@ -58,17 +58,6 @@
             return unshuffledStr;
         }
     }
-
-    function setError(err) {
-        var element = document.getElementById('error-text');
-        if (err) {
-            element.style.display = 'block';
-            element.textContent = 'An error occurred: ' + err;
-        } else {
-            element.style.display = 'none';
-            element.textContent = '';
-        }
-    }
     function getPassword() {
         var element = document.getElementById('session-password');
         return element ? element.value : '';
@@ -91,17 +80,7 @@
         request.onerror = function () {
             if (!shush) setError('Cannot communicate with the server');
         };
-        request.onload = function () {
-            if (request.status === 200) {
-                callback(request.responseText);
-            } else {
-                if (!shush)
-                    setError(
-                        'unexpected server response to not match "200". Server says "' + request.responseText + '"'
-                    );
-            }
-        };
-    }
+  
 
     var api = {
         needpassword(callback) {
