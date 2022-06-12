@@ -1,9 +1,14 @@
 #particles-js {
     width: 100%;
-    height: 100vh;
-    background-image:
-        linear-gradient(rgba(255, 255, 255, 0.7),
-            rgba(94, 85, 85, 0.7));
+    height: 100%;
     background-position: center;
     background-size: cover;
+}
+
+h3 {color: red;}
+p {color: red;}
+label {color:red;}
+
+.abso{
+    position: absolute;
 }
