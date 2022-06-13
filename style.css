@@ -1,14 +1,7 @@
-#particles-js {
+position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background-position: center;
     background-size: cover;
-}
-
-h3 {color: red;}
-p {color: red;}
-label {color:red;}
-
-.abso{
-    position: absolute;
-}
+    z-index: -1;
