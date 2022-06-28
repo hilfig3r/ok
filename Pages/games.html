@@ -71,7 +71,15 @@ a:active {
         </style>
     </head>
     <body>
-    <div class="center-screen">
+    <a class="header" href="/index.html">
+        <h1>Home</h1>
+    </a>
+        
+        
+        
+        
+        
+        <div class="center-screen">
         <input type="text" id="gsearchbar" onkeyup="document.querySelectorAll('#glist>a').forEach(l=>l.style.display=l.textContent.toUpperCase().includes(this.value.toUpperCase().replace(/ /g,''))?'block':'none')" autocomplete="off" spellcheck="false" placeholder="Search...." />
         <h2 style="color: blue; text-align: center; font-size: 40px;">Games</h2>
         <link rel="stylesheet" href="index.css">
