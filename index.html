@@ -1,134 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>0rc4</title>
-		<meta charset="UTF-8">
-			<meta http-equiv="X-UA-Compatible" content="IE=edge">
-				<meta name="viewport" content="width=device-width, initial-scale=1.0">
-					<link rel="icon" type="image/x-icon" href="favicon.ico">
-						<link rel="stylesheet" href="style.css">
-							<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-								<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-									<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-										<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-											<link rel="manifest" href="/site.webmanifest">
-												<style>
-.button {
-  background-color: red; /* Green */
-  border: none;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  }
-</style>
-												<div class="topnav">
-													<a href="index.html">Home</a>
-													<a href="/Pages/games.html">Games</a>
-													<a href="/Pages/proxies.html">Proxies</a>
-													<a href="/Pages/movies.html">Movies</a>
-													<a href="/Pages/chat.html">Chat</a>
-													<a href="/Pages/About.html">About</a>
-													<a href="/Pages/Credits.html">Credits</a>
-													<a href="/Pages/bookmarks.html">Bookmarks</a>
-													<a href="/Pages/extras.html">Extras</a>
-													<a href="/Pages/memes.html">Memes</a>
-													<a href="/Pages/update.html">Updatelog</a>
-													<input type="text" placeholder="Search..">
-													</div>
-													<style>
-        .topnav {
-  overflow: hidden;
-  background-color: red;
-}
+  <head>
+    <title>0rc4</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+      .button {
+        background-color: red;
+        /* Green */
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+    </style>
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="/Pages/games.html">Games</a>
+      <a href="/Pages/proxies.html">Proxies</a>
+      <a href="/Pages/movies.html">Movies</a>
+      <a href="/Pages/chat.html">Chat</a>
+      <a href="/Pages/About.html">About</a>
+      <a href="/Pages/Credits.html">Credits</a>
+      <a href="/Pages/bookmarks.html">Bookmarks</a>
+      <a href="/Pages/extras.html">Extras</a>
+      <a href="/Pages/memes.html">Memes</a>
+      <a href="/Pages/update.html">Updatelog</a>
+      <input type="text" placeholder="Search..">
+    </div>
+    <style>
+      .topnav {
+        overflow: hidden;
+        background-color: red;
+      }
 
-.topnav a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
+      .topnav a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
 
-.topnav a:hover {
-  background-color: black;
-  color: red;
-}
+      .topnav a:hover {
+        background-color: black;
+        color: red;
+      }
 
-.topnav a.active {
-  background-color: black;
-  color: red;
-}
+      .topnav a.active {
+        background-color: black;
+        color: red;
+      }
 
-.topnav input[type=text] {
-  float: right;
-  padding: 6px;
-  margin-top: 8px;
-  margin-right: 16px;
-  border: none;
-  font-size: 17px;
-}
+      .topnav input[type=text] {
+        float: right;
+        padding: 6px;
+        margin-top: 8px;
+        margin-right: 16px;
+        border: none;
+        font-size: 17px;
+      }
 
-              @media screen and (max-width: 600px) {
-                .topnav a, .topnav input[type=text] {
-                  float: none;
-                   display: block;
-                   text-align: left;
-                   width: 100%;
-                   margin: 0;
-                   padding: 14px;
-                 }
-                 
-                 .topnav input[type=text] {
-                   border: 1px solid black;  
-                 }
-               }
-       </style>
-													<style>
-  
-  h1 {
-            color: red;
-          }
+      @media screen and (max-width: 600px) {
 
-          p {
-            color: red;
-          }
-  body {background-color: black;
-  }
-</style>
-													<input type="button" onclick="alert('Hello im 0rc4 (the owner) Thank you for visiting our site! We love you not in a weird way... Now go and have fun playing our games. Please let us know if theres anything wrong with the games!')" value="Click Me Now!">
-														<a href="https://sites.google.com/view/totalgamess/home" class="button">Googlesites</a>
-														<a href="https://discord.gg/UJ5NszstAv" class="button">Discord</a>
-														<a href="https://github.com/CycloneHacks/CycloneHacks.github.io" class="button">GITHUB</a>
-														<div style="color: red;">
-															<hr>
-																<p style="color: red;">Up there is a link to our Google Sites
-																	<br> and our github and discord!
-																		<br>Please join us
-																		</p>
-																		<h3></h3>
-																		<!-- Start BawkBox Code-->
-																		<script data-sil-id="62bdf054e431f8001edbbb4e">var loadWidget = function() { var d = document, w = window, l = window.location,p = l.protocol == "file:" ? "http://" : "//"; if (!w.WS) w.WS = {}; c = w.WS; var m=function(t, o){ var e = d.getElementsByTagName("script"); e=e[e.length-1]; var n = d.createElement(t); if (t=="script") {n.async=true;} for (k in o) n[k] = o[k]; e.parentNode.insertBefore(n, e)}; m("script", { src: p + "bawkbox.com/widget/like-dislike/62bdf054e431f8001edbbb4e?page=" +encodeURIComponent(l+''), type: 'text/javascript' }); c.load_net = m; }; if(window.Squarespace){ document.addEventListener('DOMContentLoaded', loadWidget); setTimeOut(function(){ document.addEventListener('DOMContentLoaded', loadWidget); }, 3000) } else { loadWidget() } </script>
-																		<div class="sil-widget-like-dislike sil-widget" id="sil-widget-62bdf054e431f8001edbbb4e">
-																			<a href="//bawkbox.com/install/like-dislike">Like Dislike Button</a>
-																		</div>
-																		<!-- End BawkBox Code-->
-																	</div>
-																	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-																	<!-- begin wwww.htmlcommentbox.com -->
-																	<div id="HCB_comment_box">
-																		<a href="https://discord.gg/UJ5NszstAv">our discord</a> is loading comments...
-																	</div>
-																	<link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
-																	<script type="text/javascript" id="hcb"> /*
-																		<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&opts=16798&num=10&ts=1656613942991");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ 
-																	</script>
-																	<!-- end www.htmlcommentbox.com -->
-																</body>
-															</html>
+        .topnav a,
+        .topnav input[type=text] {
+          float: none;
+          display: block;
+          text-align: left;
+          width: 100%;
+          margin: 0;
+          padding: 14px;
+        }
+
+        .topnav input[type=text] {
+          border: 1px solid black;
+        }
+      }
+    </style>
+    <style>
+      h1 {
+        color: red;
+      }
+
+      p {
+        color: red;
+      }
+
+      body {
+        background-color: black;
+      }
+    </style>
+    <input type="button" onclick="alert('Hello im 0rc4 (the owner) Thank you for visiting our site! We love you not in a weird way... Now go and have fun playing our games. Please let us know if theres anything wrong with the games!')" value="Click Me Now!">
+    <a href="https://sites.google.com/view/totalgamess/home" class="button">Googlesites</a>
+    <a href="https://discord.gg/UJ5NszstAv" class="button">Discord</a>
+    <a href="https://github.com/CycloneHacks/CycloneHacks.github.io" class="button">GITHUB</a>
+    <div style="color: red;">
+      <hr>
+      <p style="color: red;">Up there is a link to our Google Sites <br> and our github and discord! <br>Please join us </p>
+      <h3></h3>
+      <!-- Start BawkBox Code-->
+      <script data-sil-id="62bdf054e431f8001edbbb4e">
+        var loadWidget = function() {
+          var d = document,
+            w = window,
+            l = window.location,
+            p = l.protocol == "file:" ? "http://" : "//";
+          if (!w.WS) w.WS = {};
+          c = w.WS;
+          var m = function(t, o) {
+            var e = d.getElementsByTagName("script");
+            e = e[e.length - 1];
+            var n = d.createElement(t);
+            if (t == "script") {
+              n.async = true;
+            }
+            for (k in o) n[k] = o[k];
+            e.parentNode.insertBefore(n, e)
+          };
+          m("script", {
+            src: p + "bawkbox.com/widget/like-dislike/62bdf054e431f8001edbbb4e?page=" + encodeURIComponent(l + ''),
+            type: 'text/javascript'
+          });
+          c.load_net = m;
+        };
+        if (window.Squarespace) {
+          document.addEventListener('DOMContentLoaded', loadWidget);
+          setTimeOut(function() {
+            document.addEventListener('DOMContentLoaded', loadWidget);
+          }, 3000)
+        } else {
+          loadWidget()
+        }
+      </script>
+      <div class="sil-widget-like-dislike sil-widget" id="sil-widget-62bdf054e431f8001edbbb4e">
+        <a href="//bawkbox.com/install/like-dislike">Like Dislike Button</a>
+      </div>
+      <!-- End BawkBox Code-->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- begin wwww.htmlcommentbox.com -->
+    <div id="HCB_comment_box">
+      <a href="https://discord.gg/UJ5NszstAv">our discord</a> is loading comments...
+    </div>
+    <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+    <script type="text/javascript" id="hcb">
+      /*
+																		
+																		<!--*/
+      if (!window.hcb_user) {
+        hcb_user = {};
+      }(function() {
+        var s = document.createElement("script"),
+          l = hcb_user.PAGE || ("" + window.location).replace(/'/g, "%27"),
+          h = "https://www.htmlcommentbox.com";
+        s.setAttribute("type", "text/javascript");
+        s.setAttribute("src", h + "/jread?page=" + encodeURIComponent(l).replace("+", "%2B") + "&opts=16798&num=10&ts=1656613942991");
+        if (typeof s != "undefined") document.getElementsByTagName("head")[0].appendChild(s);
+      })(); /*-->*/
+    </script>
+    <!-- end www.htmlcommentbox.com -->
+    </body>
+</html>
