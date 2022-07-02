@@ -15,8 +15,10 @@
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  }
-</style>
+  border-radius: 12px;
+         }
+
+        </style>
         
         
         
@@ -62,45 +64,33 @@
         <input type="text" id="gsearchbar" onkeyup="document.querySelectorAll('#glist>a').forEach(l=>l.style.display=l.textContent.toUpperCase().includes(this.value.toUpperCase().replace(/ /g,''))?'block':'none')" autocomplete="off" spellcheck="false" placeholder="Search...." />
         <h2 style="color: blue; text-align: center; font-size: 40px;">Games</h2>
         <link rel="stylesheet" href="index.css">
-       <button>
-        <a href="./games/1/index.html">1</a>
-       </button>
-        <button>
-        <a href='https://play2048.co/'>2048</a>
-        </button>
-        <button>
-        <a href='http://cykod.github.io/AlienInvasion/'>Alien Invasion</a>
-        </button>
-        <button>
-        <a href='https://hextris.io/'>hextris</a>
-        </button>
-        <button>
-        <a href='http://www.dougmcinnes.com/html-5-asteroids'>Astroids</a>
-        </button>
-        <button>
-        <a href='https://jinksmercury09.github.io/projects/basketball-stars/index.html'>Basketball Stars</a>
-        </button>
-        <button>
-        <a style="font-size: 140%;" href='https://landgreen.github.io/sidescroller/'>N-GON</a>
-        </button>
-        <button>
-        <a href='/Pages/games/tetris/'>tetris</a>
-        </button>
-        <button>
-        <a href='/Pages/games/chromedino/'>DINO GAME</a>
-        </button>
-        <button>
-        <a href='/Pages/games/connect3/'>Connect 3</a>
-        </button>
-        <button>
-        <a href='/Pages/games/minecraft/'>Minecraft</a>
-        </button>
-        <button>
-        <a href='/Pages/games/xx142-b2exe/'>IDK</a>
-        </button>
-        <button>
-        <a href='/Pages/games/pacman/'>Pacman</a>
-        </button>
+  
+        <a href="./games/1/index.html" class="button">1</a>
+
+        <a href="https://play2048.co/" class="button">2048</a>
+
+        <a href="http://cykod.github.io/AlienInvasion/" class="button">Alien Invasion</a>
+
+        <a href="https://hextris.io/" class="button">hextris</a>
+   
+        <a href="http://www.dougmcinnes.com/html-5-asteroids" class="button">Astroids</a>
+      
+        <a href="https://jinksmercury09.github.io/projects/basketball-stars/index.html" class="button">Basketball Stars</a>
+    
+        <a href='https://landgreen.github.io/sidescroller/" class="button">N-GON</a>
+     
+        <a href="/Pages/games/tetris/" class="button">tetris</a>
+
+        <a href="/Pages/games/chromedino/" class="button">DINO GAME</a>
+      
+        <a href="/Pages/games/connect3/" class="button">Connect 3</a>
+   
+        <a href="/Pages/games/minecraft/" class="button">Minecraft</a>
+    
+        <a href="/Pages/games/xx142-b2exe/" class="button">IDK</a>
+      
+        <a href="/Pages/games/pacman/" class="button">Pacman</a>
+        
           
           
           
