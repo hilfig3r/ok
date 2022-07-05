@@ -13,8 +13,24 @@
       <a href="/Pages/extras.html">Extras</a>
       <a href="/Pages/memes.html">Memes</a>
       <a href="/Pages/update.html">Updatelog</a>
-      <input type="text" placeholder="Search..">
+      <input type="text" placeholder="Search.." id="Search">
     </div>
+    <script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("Search");
+  filter = input.value.toUpperCase();
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+    
     <style>
       .topnav {
         overflow: hidden;
