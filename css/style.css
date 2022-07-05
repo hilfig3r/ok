@@ -1,14 +1,13 @@
-#particles-js {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(#000000, #121212);
-    background-size: cover;
-    z-index: 1;
+body {
+  background-color: black;
 }
-#page-wrapper {
-    position: relative;
-    z-index: 2;
+
+h1 {
+  color: red;
+  text-align: center;
+}
+
+p {
+  font-family: red;
+  font-size: 20px;
 }
