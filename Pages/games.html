@@ -107,44 +107,24 @@
       <h1>Back</h1>
     </a>
     <div class="center-screen">
-     <input type="text" id="gsearchbar" onkeyup="myFunction()"placeholder="Search..">
    
-      <script>
-function myFunction() {
-  // Declare variables
-  var input, filter, ul, li, a, i;
-  input = document.getElementById("gsearchbar");
-  filter = input.value.toUpperCase();
-  ul = document.getElementById("Games");
-  li = ul.getElementsByTagName("li");
-  for (i = 0; i < li.length; i++) {
-    a = li[i].getElementsByTagName("a")[0];
-    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
-    } else {
-      li[i].style.display = "none";
-    }
-  }
-}
-</script>
-      <!---end--->
       <h2 style="color: blue; text-align: center; font-size: 40px;">Games</h2>
       <link rel="stylesheet" href="index.css">
       <ul id="Games">
-        <li><a href="./games/1/index.html" class="button">1</a><li>
-        <li><a href="http://cykod.github.io/AlienInvasion/" class="button">Alien Invasion</a></li>
-        <li><a href="/Pages/games/basketball-stars/" class="button">Basketball Stars</a></li>
-        <li><a href="https://landgreen.github.io/sidescroller/" class="button">N-GON</a></li>
-        <li><a href="/Pages/games/tetris/" class="button">tetris</a></li>
-        <li><a href="/Pages/games/chromedino/" class="button">DINO GAME</a></li>
-        <li><a href="/Pages/games/connect3/" class="button">Connect 3</a></li>
-        <li><a href="/Pages/games/minecraft/" class="button">Minecraft</a></li>
-        <li><a href="/Pages/games/xx142-b2exe/" class="button">IDK</a></li>
-        <li><a href="/Pages/games/pacman/" class="button">Pacman</a></li>
-        <li><a href="/Pages/games/Subway-Surfers/" class="button">Subway surfers</a></li>
-        <li><a href="https://smileman52-minecraft.tk" class="button">Cyclonehacks minecraft server</a></li>
-        <li><a href="/Pages/games/idle-breakout/" class="button">Idle-Breakout</a></li>
-        <li><a href="/Pages/games/2048/" class="button">2048</a></li>
+       <a href="./games/1/index.html" class="button">1</a>
+       <a href="http://cykod.github.io/AlienInvasion/" class="button">Alien Invasion</a>
+       <a href="/Pages/games/basketball-stars/" class="button">Basketball Stars</a>
+       <a href="https://landgreen.github.io/sidescroller/" class="button">N-GON</a>
+       <a href="/Pages/games/tetris/" class="button">tetris</a>
+       <a href="/Pages/games/chromedino/" class="button">DINO GAME</a>
+       <a href="/Pages/games/connect3/" class="button">Connect 3</a>
+       <a href="/Pages/games/minecraft/" class="button">Minecraft</a>
+       <a href="/Pages/games/xx142-b2exe/" class="button">IDK</a>
+       <a href="/Pages/games/pacman/" class="button">Pacman</a>
+       <a href="/Pages/games/Subway-Surfers/" class="button">Subway surfers</a>
+       <a href="https://smileman52-minecraft.tk" class="button">Cyclonehacks minecraft server</a>
+       <a href="/Pages/games/idle-breakout/" class="button">Idle-Breakout</a>
+       <a href="/Pages/games/2048/" class="button">2048</a>
     </div>
     </body>
 </html>
