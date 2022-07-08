@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <img src="images/logo.png" alt="logo" width="100%">
-    <style>
+    <img src="logo.png" alt="logo" width="100%">
+    <!--<style>
       .button {
         background-color: red;
         /* Green */
@@ -107,7 +107,7 @@
         padding-top: 40px;
         padding-bottom: 40px;
       }
-    </style>
+    </style>-->
   <body>
     <div class="topnav">
       <a href="index.html">Home</a>
@@ -123,23 +123,16 @@
       <a href="/Pages/update.html">Updatelog</a>
     </div>
     <div id="clock"></div>
-    <script scr="https://raw.githubusercontent.com/CycloneHacks/cyclonehacks.github.io/main/js/clock.js"></script>
     <button class="button" onclick="alert('Hello im 0rc4 (the owner) Thank you for visiting our site! We love you not in a weird way... Now go and have fun playing our games. Please let us know if theres anything wrong with the games!')">Messege from the creator</button>
     <a href="https://sites.google.com/view/totalgamess/home" class="button">Googlesites</a>
     <a href="https://discord.gg/UJ5NszstAv" class="button">Discord</a>
     <a href="https://github.com/CycloneHacks/CycloneHacks.github.io" class="button">GITHUB</a>
     <a href="/Pages/russia.html" class="button">Russia</a>
     <a href="https://www.patreon.com/bePatron?u=69960685" data-patreon-widget-type="become-patron-button">Become a Patron!</a>
-    <script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
     <div style="color: red;">
       <hr>
       <p style="color: red;">Up there is a link to our Google Sites <br> and our github and discord!
-        <!-- hitwebcounter Code START -->
-        <!--<a href="https://www.hitwebcounter.com" target="_blank"><img src="https://hitwebcounter.com/counter/counter.php?page=7986863&style=0010&nbdigits=5&type=ip&initCount=46" title="Free Counter" Alt="web counter"   border="0" /></a> -->
-        <!---end code here for counter--->
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <!-- begin wwww.htmlcommentbox.com -->
     <div id="HCB_comment_box">
       <a href="https://discord.gg/UJ5NszstAv">our discord</a> is loading comments...
     </div>
@@ -156,7 +149,6 @@
         if (typeof s != "undefined") document.getElementsByTagName("head")[0].appendChild(s);
       })(); /*-->*/
     </script>
-    <!-- end www.htmlcommentbox.com -->
     <script>
       window.alert Hello welcome.Thank you
       for going on our website.Please tell your friends about us.Thank you;
@@ -197,5 +189,31 @@
     <div class="sil-widget-like-dislike sil-widget" id="sil-widget-62bdf054e431f8001edbbb4e">
       <a href="//bawkbox.com/install/like-dislike">Like Dislike Button</a>
     </div>
+    <script>
+      function currentTime() {
+        var date = new Date(); /* creating object of Date class */
+        var hour = date.getHours();
+        var min = date.getMinutes();
+        var sec = date.getSeconds();
+        hour = updateTime(hour);
+        min = updateTime(min);
+        sec = updateTime(sec);
+        document.getElementById("clock").innerText = hour + " : " + min + " : " + sec; /* adding time to the div */
+        var t = setTimeout(function() {
+          currentTime()
+        }, 1000); /* setting timer */
+      }
+
+      function updateTime(k) {
+        if (k < 10) {
+          return "0" + k;
+        } else {
+          return k;
+        }
+      }
+      currentTime(); /* calling currentTime() function to initiate the process */
+    </script>
+    <script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
 </html>
