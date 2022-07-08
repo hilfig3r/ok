@@ -1,22 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <div class="topnav">
-      <a href="/index.html">Home</a>
-      <a href="/Pages/games.html">Games</a>
-      <a href="/Pages/proxies.html">Proxies</a>
-      <a href="/Pages/movies.html">Movies</a>
-      <a href="/Pages/chat.html">Chat</a>
-      <a href="/Pages/About.html">About</a>
-      <a href="/Pages/Credits.html">Credits</a>
-      <a href="/Pages/bookmarks.html">Bookmarks</a>
-      <a href="/Pages/extras.html">Extras</a>
-      <a href="/Pages/memes.html">Memes</a>
-      <a href="/Pages/update.html">Updatelog</a>
-      <input type="text" placeholder="Search.." id="Search">
-    </div>
-    
-    
     <style>
       .topnav {
         overflow: hidden;
@@ -70,7 +54,7 @@
         }
       }
     </style>
-    <style>
+     <style>
       .button {
         background-color: red;
         border: none;
@@ -84,9 +68,7 @@
         cursor: pointer;
         border-radius: 12px;
       }
-    </style>
-    <title>Games</title>
-    <style>
+  
       body {
         background: #000000;
       }
@@ -103,12 +85,80 @@
         font-family: "Arial";
         font-size: 30px;
       }
+         .nav {
+        text-align: center;
+      }
+
+      .nav * {
+        box-sizing: border-box;
+        transition: all .35s ease;
+      }
+
+      .nav a {
+        padding: .5em .8em;
+        position: relative;
+        text-decoration: none;
+        font-size: 20px;
+      }
+
+      .nav a::before,
+      .nav a::after {
+        content: '';
+        height: 14px;
+        width: 14px;
+        position: absolute;
+        transition: all .35s ease;
+        opacity: 0;
+      }
+
+      .nav a::before {
+        content: '';
+        right: 0;
+        top: 0;
+        border-top: 3px solid #3E8914;
+        border-right: 3px solid #2E640F;
+        transform: translate(-100%, 50%);
+      }
+
+      .nav a:after {
+        content: '';
+        left: 0;
+        bottom: 0;
+        border-bottom: 3px solid #2E640F;
+        border-left: 3px solid #3E8914;
+        transform: translate(100%, -50%)
+      }
+
+      .nav a:hover:before,
+      .nav a:hover:after {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+
+      .nav a:hover {
+        color: #3DA35D;
+      }
     </style>
-    <a class="header" href="/index.html">
-      <h1>Back</h1>
-    </a>
+     <title>Games</title>
+    </head>
+    <body>
+    <div class="topnav">
+      <div class="nav">
+      <a href="/index.html">Home</a>
+      <a href="/Pages/games.html">Games</a>
+      <a href="/Pages/proxies.html">Proxies</a>
+      <a href="/Pages/movies.html">Movies</a>
+      <a href="/Pages/chat.html">Chat</a>
+      <a href="/Pages/About.html">About</a>
+      <a href="/Pages/Credits.html">Credits</a>
+      <a href="/Pages/bookmarks.html">Bookmarks</a>
+      <a href="/Pages/extras.html">Extras</a>
+      <a href="/Pages/memes.html">Memes</a>
+      <a href="/Pages/update.html">Updatelog</a>
+      <input type="text" placeholder="Search.." id="Search">
+    </div>
+      </div>
     <div class="center-screen">
-   
       <h2 style="color: blue; text-align: center; font-size: 40px;">Games</h2>
       <link rel="stylesheet" href="index.css">
       <ul id="Games">
@@ -132,12 +182,6 @@
        <a href="/Pages/games/radiusraid/" class="button">Radius raid</a>
        <a href="/Pages/games/shuttledeck/" class="button">Shuttle deck</a>
        <a href="/Pages/games/sleepingbeauty/" class="button">Sleeping Beauty</a>
-
-        
-        
-        
-        
-        
         </div>
     </body>
 </html>
