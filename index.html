@@ -13,15 +13,17 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <img src="logo.jpeg" alt="logo" width="400" length="400">
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YLT0L2WFD5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YLT0L2WFD5"></script>
+    <iframe data-aa='2042173' src='//acceptable.a-ads.com/2042173' style='border:0px; padding:0; width:100%; height:100%; overflow:hidden; background-color: transparent;'></iframe>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-YLT0L2WFD5');
-</script>
-    <iframe data-aa='2042173' src='//ad.a-ads.com/2042173?size=728x90' style='width:728px; height:90px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-YLT0L2WFD5');
+    </script>
     <style>
       .button {
         background-color: red;
@@ -117,21 +119,77 @@
         padding-top: 40px;
         padding-bottom: 40px;
       }
+
+      .nav {
+        text-align: center;
+      }
+
+      .nav * {
+        box-sizing: border-box;
+        transition: all .35s ease;
+      }
+
+      .nav a {
+        padding: .5em .8em;
+        position: relative;
+        text-decoration: none;
+        font-size: 20px;
+      }
+
+      .nav a::before,
+      .nav a::after {
+        content: '';
+        height: 14px;
+        width: 14px;
+        position: absolute;
+        transition: all .35s ease;
+        opacity: 0;
+      }
+
+      .nav a::before {
+        content: '';
+        right: 0;
+        top: 0;
+        border-top: 3px solid #3E8914;
+        border-right: 3px solid #2E640F;
+        transform: translate(-100%, 50%);
+      }
+
+      .nav a:after {
+        content: '';
+        left: 0;
+        bottom: 0;
+        border-bottom: 3px solid #2E640F;
+        border-left: 3px solid #3E8914;
+        transform: translate(100%, -50%)
+      }
+
+      .nav a:hover:before,
+      .nav a:hover:after {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+
+      .nav a:hover {
+        color: #3DA35D;
+      }
     </style>
-    </head>
+  </head>
   <body>
     <div class="topnav">
-      <a href="index.html">Home</a>
-      <a href="/Pages/games.html">Games</a>
-      <a href="/Pages/proxies.html">Proxies</a>
-      <a href="/Pages/movies.html">Movies</a>
-      <a href="/Pages/chat.html">Chat</a>
-      <a href="/Pages/About.html">About</a>
-      <a href="/Pages/Credits.html">Credits</a>
-      <a href="/Pages/bookmarks.html">Bookmarks</a>
-      <a href="/Pages/extras.html">Extras</a>
-      <a href="/Pages/memes.html">Memes</a>
-      <a href="/Pages/update.html">Updatelog</a>
+      <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="/Pages/games.html">Games</a>
+        <a href="/Pages/proxies.html">Proxies</a>
+        <a href="/Pages/movies.html">Movies</a>
+        <a href="/Pages/chat.html">Chat</a>
+        <a href="/Pages/About.html">About</a>
+        <a href="/Pages/Credits.html">Credits</a>
+        <a href="/Pages/bookmarks.html">Bookmarks</a>
+        <a href="/Pages/extras.html">Extras</a>
+        <a href="/Pages/memes.html">Memes</a>
+        <a href="/Pages/update.html">Updatelog</a>
+      </div>
     </div>
     <div id="clock"></div>
     <script>
@@ -159,9 +217,9 @@
       currentTime(); /* calling currentTime() function to initiate the process */
     </script>
     <button class="button" onclick="alert('Hello im 0rc4 (the owner) Thank you for visiting our site! We love you not in a weird way... Now go and have fun playing our games. Please let us know if theres anything wrong with the games!')">Messege from the creator</button>
-   <!-- <a href="https://sites.google.com/view/totalgamess/home" class="button">Googlesites</a>-->
+    <!-- <a href="https://sites.google.com/view/totalgamess/home" class="button">Googlesites</a>-->
     <a href="https://discord.gg/UJ5NszstAv" class="button">Discord</a>
-   <!-- <a href="https://github.com/CycloneHacks/CycloneHacks.github.io" class="button">GITHUB</a>-->
+    <!-- <a href="https://github.com/CycloneHacks/CycloneHacks.github.io" class="button">GITHUB</a>-->
     <a href="/Pages/russia.html" class="button">Russia</a>
     <a href="https://www.patreon.com/bePatron?u=69960685" data-patreon-widget-type="become-patron-button">Become a Patron!</a>
     <div style="color: red;">
