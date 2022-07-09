@@ -43,7 +43,7 @@
       </div>
     </div>
     <div id="clock"></div>
-    <script scr="clock.js"></script>
+    <script src="clock.js"></script>
     <button class="button" onclick="alert('Hello im 0rc4 (the owner) Thank you for visiting our site! We love you not in a weird way... Now go and have fun playing our games. Please let us know if theres anything wrong with the games!')">Messege from the creator</button>
     <!-- <a href="https://sites.google.com/view/totalgamess/home" class="button">Googlesites</a>-->
     <a href="https://discord.gg/UJ5NszstAv" class="button">Discord</a>
@@ -58,7 +58,18 @@
       <a href="https://discord.gg/UJ5NszstAv">our discord</a> is loading comments...
     </div>
     <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
-    <script scr=""com.js type="text/javascript" id="hcb"></script>
+    <script type="text/javascript" id="hcb">
+      if (!window.hcb_user) {
+        hcb_user = {};
+      }(function() {
+        var s = document.createElement("script"),
+          l = hcb_user.PAGE || ("" + window.location).replace(/'/g, "%27"),
+          h = "https://www.htmlcommentbox.com";
+        s.setAttribute("type", "text/javascript");
+        s.setAttribute("src", h + "/jread?page=" + encodeURIComponent(l).replace("+", "%2B") + "&opts=16798&num=10&ts=1656613942991");
+        if (typeof s != "undefined") document.getElementsByTagName("head")[0].appendChild(s);
+      })(); /*-->*/
+    </script>
     <script>
       window.alert Hello welcome.Thank you
       for going on our website.Please tell your friends about us.Thank you;
