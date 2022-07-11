@@ -74,10 +74,6 @@ p {
 	font-family: Arial;
 }
 
-body {
-	background-color: black;
-}
-
 /* latin */
 @font-face {
 	font-family: 'Orbitron';
@@ -154,3 +150,8 @@ body {
 .link {
 	font-family: Arial;
 	font-size: 20px;
+}
+
+body {
+	background-color: black;
+}
