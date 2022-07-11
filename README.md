@@ -7,7 +7,13 @@ I made a google website go check it out <link>https://sites.google.com/view/tota
 <br>Discord servers:
 <br><link>https://discord.gg/UJ5NszstAv</link>
 <br>[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=CycloneHacks)](https://github.com/anuraghazra/github-readme-stats)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=CycloneHacks)](https://github.com/anuraghazra/github-readme-stats)
+<br>[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=CycloneHacks)](https://github.com/anuraghazra/github-readme-stats)
+
+
+<br>[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=CycloneHacks)](https://github.com/anuraghazra/github-readme-stats)
+
+
+
 
 ### Contributors 
 <img src="https://contrib.rocks/image?repo=CycloneHacks/CycloneHacks.github.io" />
