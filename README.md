@@ -6,5 +6,7 @@ I made a google website go check it out <link>https://sites.google.com/view/tota
 <br><link>https://CycloneHacks.github.io</link>
 <br>Discord servers:
 <br><link>https://discord.gg/UJ5NszstAv</link>
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=CycloneHacks&repo=github-readme-stats)](https://github.com/CycloneHacks/github-readme-stats)
+
 ### Contributors 
 <img src="https://contrib.rocks/image?repo=CycloneHacks/CycloneHacks.github.io" />
