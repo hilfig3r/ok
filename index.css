@@ -154,23 +154,3 @@ body {
 .link {
 	font-family: Arial;
 	font-size: 20px;
-}
-.fa {
-  padding: 20px;
-  font-size: 50px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
-
-.fa:hover {
-    opacity: 0.7;
-    color: red;
-}
-
-.fa-github {
-  background: black;
-  color: white;
-}
