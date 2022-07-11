@@ -10,7 +10,6 @@ I made a google website go check it out <link>https://sites.google.com/view/tota
 <br>[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=CycloneHacks)](https://github.com/anuraghazra/github-readme-stats)
 
 
-<br>[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=CycloneHacks)](https://github.com/anuraghazra/github-readme-stats)
 
 
 
