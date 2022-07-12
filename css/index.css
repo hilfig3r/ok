@@ -156,6 +156,6 @@ body {
         background-color: rgb(15,15,15);
 }
 
-a {
-font-family: Arial;
+.font-arial {
+	font-family: Arial;
 }
