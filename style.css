@@ -1,0 +1,36 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+div#tracker {
+  position: relative;
+  font-weight: bold;
+  color: red;
+}
+
+div#tracker2 {
+  position: relative;
+  font-weight: bold;
+  color: red;
+}
+
+div#tracker3 {
+  position: relative;
+  font-weight: bold;
+  color: red;
+}
+
+div#tracker4 {
+  position: relative;
+  font-weight: bold;
+  color: red;
+}
+
+.dot {
+    height: 8px; width: 8px;
+    border-radius: 4px; /* rounds corners */
+    position: absolute;
+    background: red;
+}
