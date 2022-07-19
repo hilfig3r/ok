@@ -192,5 +192,8 @@ body {
 
 .font-arial {
 	font-family: Arial;
-	color: white;
+}
+
+.white {
+color: white;
 }
