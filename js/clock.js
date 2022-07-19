@@ -10,6 +10,9 @@ function currentTime() {
         var t = setTimeout(function() {
           currentTime()
         }, 1000); /* setting timer */
+        if (hour > 12) {
+        return hour - 12;
+        }
       }
 
       function updateTime(k) {
