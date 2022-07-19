@@ -187,9 +187,10 @@ p {
 }
 
 body {
-        background-color: rgb(22,22,22);
+        background-color: black;
 }
 
 .font-arial {
 	font-family: Arial;
+	color: white;
 }
