@@ -10,16 +10,15 @@ function currentTime() {
         var t = setTimeout(function() {
           currentTime()
         }, 1000); /* setting timer */
-        if (hour > 12) {
-        return hour - 12;
-        }
       }
 
       function updateTime(k) {
         if (k < 10) {
           return "0" + k;
+        } else if (k > 12) {
+          return k - 12;
         } else {
-          return k;
+        return k;
         }
       }
       currentTime(); /* calling currentTime() function to initiate the process */
