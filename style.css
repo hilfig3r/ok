@@ -1,7 +1,7 @@
 html, body {
-  height: 100%;
-  width: 100%;
-  overflow: scroll;
+  height: 50%;
+  width: 50%;
+  overflow: auto;
 }
 
 div#tracker {
