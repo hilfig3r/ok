@@ -32,11 +32,13 @@
 .topnav a:hover {
 	background-color: black;
 	color: red;
+	opacity: 0.2;
 }
 
 .topnav a.active {
 	background-color: black;
 	color: red;
+	opacity: 0.2;
 }
 
 .topnav input[type=text] {
