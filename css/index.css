@@ -30,15 +30,15 @@
 }
 
 .topnav a:hover {
-	background-color: black;
+	background-color: transparent;
 	color: red;
-	opacity: 0.2;
+	
 }
 
 .topnav a.active {
-	background-color: black;
+	background-color: transparent;
 	color: red;
-	opacity: 0.2;
+	
 }
 
 .topnav input[type=text] {
@@ -144,6 +144,7 @@ p {
 .nav a:hover:after {
 	transform: translate(0, 0);
 	opacity: 1;
+	
 }
 
 .nav a:hover {
