@@ -1,15 +1,44 @@
+.item img {
+    border-radius: 3%;
+    margin-left: 20px
+   }
+
+   .item {
+    display: grid;
+    margin-left: 20px;
+  }
+
+  div.item {
+    vertical-align: top;
+    display: inline-block;
+    width: 188px;
+    margin-left: 20px;
+
+}
+.item img {
+    width: 188px;
+    height: 188px;
+    margin-left: 20px;
+}
+.caption {
+    display: block;
+    display: grid;
+    justify-content: left;
+    margin-left: 20px;
+}
+
 .button {
-	background-color: red;
-	/* Green */
-	border: none;
-	color: black;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
-	cursor: pointer;
+        background-color: red;
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 12px;
 }
 
 .topnav {
@@ -181,6 +210,7 @@ color: white;
     transition: opacity .8s ease, transform 1.4s ease
     z-index: -1;
 }
+
 #particles-js 
 {
     width: 100%;
@@ -190,6 +220,7 @@ color: white;
     top: 0;
     left: 0
 }
+
 canvas
 {
     display:block;
@@ -197,3 +228,8 @@ canvas
     z-index: -1;
 }
 
+a {
+color: red;
+font-family:Arial;
+}
+    
