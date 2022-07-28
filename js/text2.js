@@ -1,27 +1,55 @@
-var textWrapper = document.querySelector('.ml1 .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+const carouselText = [
+  {text: "0rc4 added discord to the webiste. Its in the extra page.(smileman52)(7/25/22)", color: "red"},
+  {text: "lots of changes to the home screen and n-gon is hosted on the website.(smileman52)(7/19/22)", color: "red"},
+  {text: "Added Alot of more games...Check them out(0rc4)(7/6/22)", color: "red"}
+  {text: "I added cyclonehacks's minecraft server. its on the games tab(smileman52)(7/5/22)", color: "red"}
+  {text: "Added some new games with gfiles. Thank to Rena for giving them to me.(0rc4)(6/30/22)", color: "red"}
+  {text: "Im now back and updated Private policy and terms and conditions.(0rc4)(6/25/2022)", color: "red"}
+  {text: "Being out for a couple of days for personal reasons... Smile man on charge (0rc4)(6/22/2022)", color: "red"}
+  {text: "Sorry Guys 1v1.LOL can't be hosted. Sorry. (smileman52)(6/20/2022) ", color: "red"}
+  {text: "Made the game 1 be hosted on the website. (smileman52)(6/12/2022) ", color: "red"}
+  {text: "Adding more games soon", color: "red"}
+]
 
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml1 .letter',
-    scale: [0.3,1],
-    opacity: [0,1],
-    translateZ: 0,
-    easing: "easeOutExpo",
-    duration: 600,
-    delay: (el, i) => 70 * (i+1)
-  }).add({
-    targets: '.ml1 .line',
-    scaleX: [0,1],
-    opacity: [0.5,1],
-    easing: "easeOutExpo",
-    duration: 700,
-    offset: '-=875',
-    delay: (el, i, l) => 80 * (l - i)
-  }).add({
-    targets: '.ml1',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
+$( document ).ready(async function() {
+  carousel(carouselText, "#feature-text")
+});
+
+async function typeSentence(sentence, eleRef, delay = 50 ){
+  const letters = sentence.split("");
+  let i = 0;
+  while(i < letters.length) {
+    await waitForMs(delay);
+    $(eleRef).append(letters[i]);
+    i++
+  }
+  return;
+}
+
+async function deleteSentence(eleRef) {
+  const sentence = $(eleRef).html();
+  const letters = sentence.split("");
+  let i = 0;
+    $(eleRef).append("<br>");
+  }
+
+async function carousel(carouselList, eleRef) {
+    var i = 0;
+    while(true) {
+      updateFontColor(eleRef, carouselList[i].color)
+      await typeSentence(carouselList[i].text, eleRef);
+      await waitForMs(500);
+      await deleteSentence(eleRef);
+      await waitForMs(500);
+      i++
+      if(i >= carouselList.length) {i = 0;}
+    }
+}
+
+function updateFontColor(eleRef, color) {
+  $(eleRef).css('color', color);
+}
+
+function waitForMs(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms))
+}
