@@ -1,4 +1,5 @@
 const carouselText = [
+  {text: "I changed a lot of the website. the discord is now on the chat page(smileman52)(7/28/22)", color: "red"}
   {text: "0rc4 added discord to the webiste. Its in the extra page.(smileman52)(7/25/22)", color: "red"},
   {text: "lots of changes to the home screen and n-gon is hosted on the website.(smileman52)(7/19/22)", color: "red"},
   {text: "Added Alot of more games...Check them out(0rc4)(7/6/22)", color: "red"}
@@ -9,6 +10,8 @@ const carouselText = [
   {text: "Sorry Guys 1v1.LOL can't be hosted. Sorry. (smileman52)(6/20/2022) ", color: "red"}
   {text: "Made the game 1 be hosted on the website. (smileman52)(6/12/2022) ", color: "red"}
   {text: "Adding more games soon", color: "red"}
+
+// use this a a templete  {text: "text", color: "red"}
 ]
 
 $( document ).ready(async function() {
