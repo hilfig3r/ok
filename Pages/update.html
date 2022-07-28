@@ -5,22 +5,53 @@
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <title>Update log</title>
   <style>
-    .ml1 {
-      font-weight: 900;
-      font-size: 15px;
-    }
+    @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap');
 
-    .ml1 .letter {
-      display: inline-block;
-      line-height: 1em;
-    }
+    body {
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Darker Grotesque', sans-serif;
 
-    .ml1 .text-wrapper {
-      position: relative;
-      display: inline-block;
-      padding-top: 0.1em;
-      padding-right: 0.05em;
-      padding-bottom: 0.15em;
+      .typing-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        #feature-text {
+          margin-left: 8px;
+        }
+
+        .input-cursor {
+          display: inline-block;
+          width: 2px;
+          height: 20px;
+          background-color: white;
+          margin-left: 8px;
+          animation: blink .6s linear infinite alternate;
+        }
+      }
+
+      @keyframes blink {
+        0% {
+          opacity: 1;
+        }
+
+        40% {
+          opacity: 1;
+        }
+
+        60% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 0;
+        }
+      }
     }
   </style>
 </head>
@@ -38,23 +69,14 @@
       <input type="text" placeholder="Search..">
     </div>
   </div>
-  <div style="background-color:black; padding:20px; font-family: Arial; ">
-    <h1 style="font-size:30px;">Update Log</h1>
-    <h1 class="ml1">
-        <span class="letters"> 
-          0rc4 added discord to the webiste. Its in the extra page.(smileman52)(7/25/22) <br> 
-          lots of changes to the home screen and n-gon is hosted on the website.(smileman52)(7/19/22) <br> 
-          Added Alot of more games...Check them out(0rc4)(7/6/22) <br> 
-          I added cyclonehacks's minecraft server. its on the games tab(smileman52)(7/5/22) <br>
-          Added some new games with gfiles. Thank to Rena for giving them to me.(0rc4)(6/30/22) <br> 
-          Im now back and updated Private policy and terms and conditions.(0rc4)(6/25/2022) <br> 
-          Being out for a couple of days for personal reasons... Smile man on charge (0rc4)(6/22/2022) <br> 
-          Sorry Guys 1v1.LOL can't be hosted. Sorry. (smileman52)(6/20/2022) <br> 
-          Made the game 1 be hosted on the website. (smileman52)(6/12/2022) <br> 
-          Adding more games soon </span>
-    </h1>
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <body>
+    <div style="background-color:black; padding:20px; font-family: Arial; ">
+      <div class="typing-container">
+        <span id="feature-text"></span>
+        <span class="input-cursor"></span>
+      </div>
+    </div>
+  </body>
   <script src="/js/text2.js"></script>
 </body>
 </html>
