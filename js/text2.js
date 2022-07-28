@@ -45,7 +45,7 @@ async function carousel(carouselList, eleRef) {
       await deleteSentence(eleRef);
       await waitForMs(500);
       i++
-      if(i >= carouselList.length) {i = 0;}
+      if(i >= carouselList.length) {break;}
     }
 }
 
