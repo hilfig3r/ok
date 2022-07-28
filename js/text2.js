@@ -18,7 +18,7 @@ $( document ).ready(async function() {
   carousel(carouselText, "#feature-text")
 });
 
-async function typeSentence(sentence, eleRef, delay = 20 ){
+async function typeSentence(sentence, eleRef, delay = 15 ){
   const letters = sentence.split("");
   let i = 0;
   while(i < letters.length) {
@@ -41,9 +41,8 @@ async function carousel(carouselList, eleRef) {
     while(true) {
       updateFontColor(eleRef, carouselList[i].color)
       await typeSentence(carouselList[i].text, eleRef);
-      await waitForMs(500);
+      await waitForMs(250);
       await deleteSentence(eleRef);
-      await waitForMs(500);
       i++
       if(i >= carouselList.length) {break;}
     }
