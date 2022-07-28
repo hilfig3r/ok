@@ -206,13 +206,25 @@ var shuffler = document.getElementById('shuffler');
 
 var headText = new WordShuffler(headline,{
   textColor : '#fff',
-  timeOffset : 1,
+  timeOffset : 18,
   mixCapital : true,
   mixSpecialCharacters : true
 });
 
 var pText = new WordShuffler(text,{
   textColor : '#fff',
-  timeOffset : 3
-  mixSpecialCharacters : true
+  timeOffset : 2
 });
+
+var buttonText = new WordShuffler(shuffler,{
+  textColor : 'tomato',
+  timeOffset : 10
+});
+
+
+
+  shuffler.addEventListener('click',function () {
+    headText.restart();
+    pText.restart();
+    buttonText.restart();
+  });
