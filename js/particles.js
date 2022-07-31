@@ -26,14 +26,15 @@ var pJS = function(tag_id, params){
           value_area: 800
         }
       },
-      color: {
-        value: '#ff0000'
+      
+      color: red;
+      
       },
       shape: {
         type: 'circle',
         stroke: {
           width: 0,
-          color: '#ff0000'
+          color: red;
         },
         polygon: {
           nb_sides: 5
