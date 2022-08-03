@@ -107,6 +107,16 @@ p {
 	font-family: Arial;
 }
 
+h3 { 
+	color: red;
+	font-family: Arial;
+}
+
+h2 { 
+	color: red;
+	font-family: Arial;
+}
+
 /* latin */
 @font-face {
 	font-family: 'Orbitron';
