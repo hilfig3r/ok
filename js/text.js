@@ -16,7 +16,7 @@
   var options = {
     fps : 20,
     timeOffset : 5,
-    textColor : '#000',
+    textColor : '#ff0000',
     fontSize : "50px",
     useCanvas : false,
     mixCapital : false,
@@ -205,14 +205,14 @@ var text = document.getElementById('text');
 var shuffler = document.getElementById('shuffler');
 
 var headText = new WordShuffler(headline,{
-  textColor : '#fff',
-  timeOffset : 18,
+  textColor : '#ff0000',
+  timeOffset : 10,
   mixCapital : true,
   mixSpecialCharacters : true
 });
 
 var pText = new WordShuffler(text,{
-  textColor : '#fff',
+  textColor : '#ff0000',
   timeOffset : 2
 });
 
