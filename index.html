@@ -2,7 +2,26 @@
 <html lang="en">
   <html>
     <head>
-    <meta name="google-site-verification" content="SfAB3aHhmFlzgrFWfmEtNb6zA5pTXilS6X0PN1kQY-k" />      
+  
+      ---
+permalink: /
+title: "YOUR NEW TITLE HERE"
+author_profile: true
+redirect_from: 
+  - /about/
+  - /about.html
+---
+      <script>
+      
+     {% if page.title and page.author_profile != true %}
+  {% assign seo_title = page.title | append: " " | append: site.title_separator | append: " " | append: site.title %}
+{% elsif page.title and page.author_profile == true %}
+  {% assign seo_title = "CycloneHacks" %}
+  {% endif %}</script>
+      
+      
+      
+      <meta name="google-site-verification" content="SfAB3aHhmFlzgrFWfmEtNb6zA5pTXilS6X0PN1kQY-k" />      
     <title>Cyclonehacks</title>
       <meta property="0rca" content=”/images/0rc4.jpg” />
       <meta charset="UTF-8">
