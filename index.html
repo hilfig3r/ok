@@ -2,7 +2,27 @@
 <html lang="en">
   <html>
     <head>
-  <style>
+      <script>
+      var answer = prompt("Make the website unvisiable to spyware tools? Y/N");
+		   if(answer=="Y"){
+      var urlObj = new window.URL(window.location.href);
+        win = window.open();
+        win.document.body.style.margin = "0";
+        win.document.body.style.height = "100vh";
+        var iframe = win.document.createElement("iframe");
+        iframe.style.border = "none";
+        iframe.style.width = "100%";
+        iframe.style.height = "100%";
+        iframe.style.margin = "0";
+        iframe.referrerpolicy = "no-referrer";
+        iframe.allow = "fullscreen";
+        iframe.src = "https://cyclonehacks.github.io";
+        win.document.body.appendChild(iframe);
+      } else {
+          
+      }
+      </script>
+  <!--<style>
       ---
 permalink: /
 title: "CycloneHacks"
@@ -13,15 +33,12 @@ redirect_from:
 ---
       </style>
       <script>
-      
      {% if page.title and page.author_profile != true %}
   {% assign seo_title = page.title | append: " " | append: site.title_separator | append: " " | append: site.title %}
 {% elsif page.title and page.author_profile == true %}
   {% assign seo_title = "CycloneHacks" %}
-  {% endif %}</script>
-      
-      
-      
+  {% endif %}
+      </script>-->
       <meta name="google-site-verification" content="SfAB3aHhmFlzgrFWfmEtNb6zA5pTXilS6X0PN1kQY-k" />      
     <title>Cyclonehacks</title>
       <meta property="0rca" content=”/images/0rc4.jpg” />
