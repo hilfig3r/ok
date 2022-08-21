@@ -1,4 +1,5 @@
-win = window.open();
+if !(window.location.href == "about:blank"){
+  win = window.open();
          win.document.body.style.margin = "0";
          win.document.body.style.height = "100vh";
          var iframe = win.document.createElement("iframe");
@@ -10,3 +11,4 @@ win = window.open();
          iframe.allow = "fullscreen";
          iframe.src = "https://cyclonehacks.github.io";
          win.document.body.appendChild(iframe);
+}
