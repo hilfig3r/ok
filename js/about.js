@@ -11,5 +11,6 @@ if (!(window.location.href == "about:blank")){
          iframe.src = "https://cyclonehacks.github.io";
          win.document.body.appendChild(iframe);
 }
+window.close()
 
 
