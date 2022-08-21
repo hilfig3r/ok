@@ -1,5 +1,4 @@
 if (!(window.location.href == "about:blank")){
-         win = window.open();
          win.document.body.style.margin = "0";
          win.document.body.style.height = "100vh";
          var iframe = win.document.createElement("iframe");
