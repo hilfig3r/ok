@@ -1,4 +1,3 @@
-
          win = window.open();
          win.document.body.style.margin = "0";
          win.document.body.style.height = "100vh";
@@ -10,7 +9,6 @@
          iframe.referrerpolicy = "no-referrer";
          iframe.allow = "fullscreen";
          iframe.src = "https://cyclonehacks.github.io";
-         win.document.body.appendChild(iframe);
 window.close()
 
 
