@@ -1,6 +1,7 @@
          win = window.open();
          win.document.body.style.margin = "0";
          win.document.body.style.height = "100vh";
+         win.document.body.appendChild(iframe);
          var iframe = win.document.createElement("iframe");
          iframe.style.border = "none";
          iframe.style.width = "100%";
