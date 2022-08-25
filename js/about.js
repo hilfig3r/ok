@@ -1,4 +1,8 @@
-         win = window.open();
+var x = prompt("Blocked Y/N");
+if(x=="Y") {
+
+
+win = window.open();
          win.document.body.style.margin = "0";
          win.document.body.style.height = "100vh";
     
@@ -12,7 +16,8 @@
         
          iframe.src = "https://cyclonehacks.github.io";
  win.document.body.appendChild(iframe);
-         window.close()
+         window.close();
+} else {}
 
 
 
