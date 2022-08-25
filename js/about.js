@@ -1,7 +1,7 @@
 document.getElementById("about").onclick = about();
 
 function about(){
- var win = window.open();
+win = window.open();
          win.document.body.style.margin = "0";
          win.document.body.style.height = "100vh";
     
