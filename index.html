@@ -66,9 +66,7 @@ redirect_from:
             <a href="/Pages/update.html">Updatelog</a>
           </div>
         </div>
-        <button id="click">Click me for aboutblank!</button>
-        <script>
-          document.getElementById("click").onclick = function () {
+        <button id="click" onclick="
         win = window.open();
         win.document.body.style.margin = "0";
         win.document.body.style.height = "100vh";
@@ -82,7 +80,7 @@ redirect_from:
         iframe.src = "https://cyclonehacks.github.io/";
         win.document.body.appendChild(iframe);
           }
-        </script>
+                                                      ">Click me for aboutblank!</button>
         <div id="clock"></div>
         <script src="/js/clock.js"></script>
     
