@@ -2,14 +2,12 @@
 <html lang="en">
   <html>
     <head>
-      <script>
+      <button id="click" onclick="start()">Click me for aboutblank!</button>
+        <script>
         var x = prompt("About Blank? (About Blank makes our website un-visable to any of the teachers tools) Y/N");
         if (x=="Y"||x=="y") {
           document.getElementById("click").click();
         };
-      </script>
-      <button id="click" onclick="start()">Click me for aboutblank!</button>
-        <script>
           function start() {
             win = window.open();
             win.document.body.style.margin = "0";
